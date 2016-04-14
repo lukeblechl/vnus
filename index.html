@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html data-ng-app="vnusApp">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="description" content="v-nus" />
+    <meta name="keywords" content="angular.js, input, resize, text" />
+    <meta name="author" content="Luke Blechl" />
+    <title>v-nus</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="imgs/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="imgs/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="imgs/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="imgs/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="imgs/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="imgs/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="imgs/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="imgs/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="imgs/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="imgs/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="imgs/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="imgs/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+	<link href='css/main.css?v=1.0.19' rel='stylesheet' type='text/css'>
+	<!-- Attempt to load AngularJS from CDN -->	
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular.min.js"></script>
+
+	<!-- If AngularJS fails to load fallback a local version -->
+	<script>window.angular || document.write('<script src="js/angular.min.js"><\/script>');</script>
+</head>
+<body data-ng-controller="vnusCtrl">
+	<header id="vnus">v-nus</header>
+	<div>
+		<p>An angular.js solution to keep your text within the box!</p>
+	</div>
+	<div id="search-container">
+		<input resizable data-ng-trim="false" data-ng-style="{ 'font-size': sFontSize }" data-ng-change="sChange(s.length)" type="text" id="s" name="s" type="search" placeholder="Type away..." data-ng-model="s">
+	</div>
+	<script src="js/main.js?v=1.0.47" type="text/javascript"></script>
+</body>
+</html>
+<!-- A best effort has been made to test this site in as many browsers, OS's, and devices as possible. Please contact luke@lukeblechl.com with any comments or questions. Thanks! -->
